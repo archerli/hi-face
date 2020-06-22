@@ -39,6 +39,7 @@
 		"beforePreview": "",
 		"beforeUpload": ""
 	},
+	"libVersion": "2.11.2",
 	"condition": {
 		"search": {
 			"current": -1,

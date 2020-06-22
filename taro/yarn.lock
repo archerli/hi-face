@@ -11356,6 +11356,11 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+sr-sdk-wxapp@1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/sr-sdk-wxapp/-/sr-sdk-wxapp-1.3.6.tgz#52f0bad8631844a7f5fdfcf3369d6bf95ae6c347"
+  integrity sha512-hYWNaHvmf40cAN/Cth0j7EILtJ/yW30zL36YLnfAoN+kwM1Tgmvxk4jsIRciHNmXuLqwlakqa8+Ni8bP3wbfEA==
+
 sshpk@^1.7.0:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/sshpk/-/sshpk-1.16.1.tgz#fb661c0bef29b39db40769ee39fa70093d6f6877"

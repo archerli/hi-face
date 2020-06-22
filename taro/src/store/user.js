@@ -39,6 +39,22 @@ const userActions = mirror.model({
     },
     setLoginInfo(state, payload) {
       const { userInfo = {}, loginStatus } = payload
+
+      if (Taro.srSdk) {
+        const { wxOpenId, userId } = userInfo
+
+        Taro.srSdk.track('login_wxapp', {
+          page: 'pages/tabBar/index/index',
+          page_title: '首页',
+          time: '1560409473714',
+          wx_user: {
+            app_id: config.appId,
+            open_id: wxOpenId,
+            user_id: userId,
+          }
+        })
+      }
+      // let app = Taro.getApp()
       return {
         ...state,
         loginStatus: loginStatus || state.loginStatus,
