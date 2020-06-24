@@ -43,16 +43,11 @@ const userActions = mirror.model({
       if (Taro.srSdk) {
         const { wxOpenId, userId } = userInfo
 
-        Taro.srSdk.track('login_wxapp', {
-          page: 'pages/tabBar/index/index',
-          page_title: '首页',
-          time: '1560409473714',
-          wx_user: {
-            app_id: config.appId,
-            open_id: wxOpenId,
-            user_id: userId,
-          }
+        Taro.srSdk.setUser({
+          open_id: wxOpenId,
+          user_id: userId,
         })
+        Taro.srSdk.track('login_wxapp')
       }
       // let app = Taro.getApp()
       return {
